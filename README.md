@@ -1,25 +1,34 @@
-Title- hair styling & color
+# **Title** - hair styling & color
 
-Function for each module:
-Customer:View department info, booking, payment
+# **Function for each module:**
+ ### Customer:
+- View department info
+- booking
+- payment
 
-Expert:View assign customer, view salary
+### Expert:
+- View assign customer
+- view salary
 
-Admin:View overall Schedule, View customer list, generate sales report
+### Admin:
+- View overall Schedule
+- View customer list
+- generate sales report
 
-Type info:
-- Services:
+# **Type info:**
+### Services:
   - Hair Cut – RM80
   - Hair Coloring – RM150
   - Rebonding Treatment – RM250
 
-- Experts:
+### Experts:
   - Lily – Hair Stylist (10AM–4PM)
   - Jay – Color Specialist (10AM–4PM)
   - Amira – Treatment Expert (10AM-4PM)
 
-Psutocode:
-<Main menu>
+# **Psutocode:**
+### Main menu:
+```
 START
     DISPLAY welcome screen and logo
     LOOP UNTIL user selects 'Exit'
@@ -40,8 +49,9 @@ START
         END SWITCH
     END LOOP
 END
-
-<Customer>
+```
+### Customer:
+```
 FUNCTION CustomerModule()
     LOOP UNTIL user selects 'Exit'
         DISPLAY menu:
@@ -67,8 +77,9 @@ FUNCTION CustomerModule()
         END SWITCH
     END LOOP
 END FUNCTION
-
-<Expert>
+```
+### Expert:
+```
 FUNCTION ExpertModule()
     AUTHENTICATE expert login
     LOOP UNTIL expert selects 'Exit'
@@ -89,8 +100,9 @@ FUNCTION ExpertModule()
         END SWITCH
     END LOOP
 END FUNCTION
-
-<Admin>
+```
+### Admin:
+```
 FUNCTION AdminModule()
     AUTHENTICATE admin login
     LOOP UNTIL admin selects 'Exit'
@@ -115,3 +127,4 @@ FUNCTION AdminModule()
         END SWITCH
     END LOOP
 END FUNCTION
+```
